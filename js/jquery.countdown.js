@@ -34,7 +34,7 @@ and GPL-3.0 (http://opensource.org/licenses/GPL-3.0) licenses.
       getDateData = function(endDate) {
         var dateData, diff;
         endDate = Date.parse($.isPlainObject(_this.options.date) ? _this.options.date : new Date(_this.options.date));
-        diff = (endDate - Date.parse(new Date)) / 1000;
+        diff = ((endDate - Date.parse(new Date)) / 1000);
         if (diff <= 0) {
           diff = 0;
           if (_this.interval) {
@@ -111,7 +111,7 @@ and GPL-3.0 (http://opensource.org/licenses/GPL-3.0) licenses.
       return this.init();
     };
     $.countdown.defaultOptions = {
-      date: "August 3, 2017 19:00:00",
+      date: "October 17, 2019 19:00:00",
       refresh: 1000,
       onEnd: $.noop,
       render: function(date) {

@@ -45,7 +45,7 @@
                     <div class="logo" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="30">
                         <img src="img/culture-n-cuisine.png" alt="" />
                     </div>
-                    <h1 class="home-hd" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="30">Our next event is September 7!</h1>
+                    <h1 class="home-hd" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="30">Our next event is October 17th!</h1>
 
                     <!-- ====== 3.1 Countdown ====== -->
 
@@ -54,7 +54,7 @@
                     <!-- ====== x/ 3.1 Countdown ends x/ ====== -->
 
                     <p data-aos="zoom-in" data-aos-duration="800" data-aos-delay="30">
-                    Signup for the event by clicking <a href="https://appreciationofgermany.eventbrite.com">here!</a>
+                    Signup for the event by clicking <a href="http://appreciationofhonduras.eventbrite.com">here!</a>
                     </p>
                     <p data-aos="zoom-in" data-aos-duration="800" data-aos-delay="30">Be sure to leave us your email, and we'll notify you when it's coming up.
                     </p>
@@ -150,7 +150,8 @@
                     var china = {lat: 39.933, lng: 116.379};
                     var iran = {lat: 32.507, lng: 54.398};
                     var vietnam = {lat: 13.484, lng: 103.145};
-                    var germany = {lat: 50.695, lng: 10.745};
+                    var honduras = {lat: 15.200, lng: -86.241};
+                    var houston = {lat: 29.7604, lng: -95.3698}
                     var map = new google.maps.Map(document.getElementById('map'), {
                         zoom: 2,
                         center: italy,
@@ -192,10 +193,15 @@
                         title: "Appreciation of Vietnam"
                     });
                      var marker8 = new google.maps.Marker({
-                        position: germany,
+                        position: honduras,
                         map: map,
-                        title: "Appreciation of Germany"
+                        title: "Appreciation of Honduras"
                     });
+                    var marker9 = new google.maps.Marker({
+                       position: houston,
+                       map: map,
+                       title: "Appreciation of Houston"
+                   });
                     marker.addListener('click', function() {
                         window.setTimeout(function() {
                             window.location.href = "https://www.youtube.com/watch?v=OoNhKrZzygY&t=3s";
@@ -236,7 +242,12 @@
                     });
                     marker8.addListener('click', function() {
                         window.setTimeout(function() {
-                            window.location.href = "https://appreciationofgermany.eventbrite.com";
+                            window.location.href = "http://appreciationofhonduras.eventbrite.com";
+                        }, 500);
+                    });
+                    marker9.addListener('click', function() {
+                        window.setTimeout(function() {
+                            window.location.href = "https://www.facebook.com/pg/cultureandcuisinehtx/photos/?tab=album&album_id=1422621711190923 ";
                         }, 500);
                     });
                     marker.addListener('mouseover', function() {
@@ -287,6 +298,12 @@
                     marker8.addListener('mouseout', function() {
                         $("#map-link-8").removeClass("map-selected");
                     });
+                    marker9.addListener('mouseover', function() {
+                        $("#map-link-9").addClass("map-selected");
+                    });
+                    marker9.addListener('mouseout', function() {
+                        $("#map-link-9").removeClass("map-selected");
+                    });
                 }
             </script>
             <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDtVKW_HZfWT6OaSI7IFAh2Al6ZysPMHQ&callback=initMap"></script>
@@ -303,7 +320,8 @@
                     <li ><a  id="map-link-4" href="https://www.facebook.com/pg/cultureandcuisinehtx/photos/?tab=album&album_id=1284531681666594">Appreciation of Mexico</a></li>
                     <li ><a  id="map-link-5" href="https://www.facebook.com/pg/cultureandcuisinehtx/photos/?tab=album&album_id=1322151921237903">Appreciation of China</a></li>
                     <li ><a  id="map-link-6" href="https://www.facebook.com/pg/cultureandcuisinehtx/photos/?tab=album&album_id=1351799758273119">Appreciation of Iran</a></li><li ><a  id="map-link-7" href="https://www.facebook.com/media/set/?set=a.1378821362237625.1073741837.1101384783314619&type=1&l=ad720e77fc">Appreciation of Vietnam</a></li>
-                	<li ><a  id="map-link-8" href="https://appreciationofgermany.eventbrite.com">Appreciation of Germany</a></li>
+                	<li><a id="map-link-9" href="https://www.facebook.com/pg/cultureandcuisinehtx/photos/?tab=album&album_id=1422621711190923">Appreciation of Houston</a></li>
+                    <li><a id="map-link-8" href="http://appreciationofhonduras.eventbrite.com">Appreciation of Honduras</a></li>
                 </ul>
             </div>
         </div>

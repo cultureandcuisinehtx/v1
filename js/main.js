@@ -121,7 +121,7 @@ $(function () {
     $(".third-bg").backstretch("img/1.jpg"); // services
     $(".fourth-bg").backstretch("img/1.jpg"); // portfolio
     $(".fifth-bg").backstretch("img/1.jpg"); // contact
-    
+
 
 
     /* ================================== */
@@ -151,8 +151,8 @@ $(function () {
         $("#unmute").addClass("display-none"),
         $("#mute").removeClass("display-none")
     });
-    
-    
+
+
     /* ================================= */
     /* :::::::::: 4. Countdown ::::::::: */
     /* ================================= */
@@ -160,7 +160,7 @@ $(function () {
     // To change date, simply edit: var endDate = "Dec 30, 2015 20:39:00";
 
     $(function countdown() {
-        var endDate = "September 7, 2017 19:00:00";
+        var endDate = "October 17, 2017 19:00:00";
         $('.countdown').countdown({
             date: endDate,
             render: function (data) {
@@ -191,7 +191,7 @@ $(function () {
                 for (var i = 0; i < numNodes; i++) {
                     el = thumbElements[i];
 
-                    // include only element nodes 
+                    // include only element nodes
                     if (el.nodeType !== 1) {
                         continue;
                     }
@@ -332,7 +332,7 @@ $(function () {
 
                 if (fromURL) {
                     if (options.galleryPIDs) {
-                        // parse real index when custom PIDs are used 
+                        // parse real index when custom PIDs are used
                         // http://photoswipe.com/documentation/faq.html#custom-pid-in-url
                         for (var j = 0; j < items.length; j++) {
                             if (items[j].pid == index) {
@@ -456,7 +456,7 @@ $(function () {
 
     $(function contactform() {
         $('#valid-form').on("click", function clickbutton() {
-            // validate and process form here 
+            // validate and process form here
             $("#ajax-contact-form").validate({
                 rules: {
                     name: {
@@ -485,9 +485,9 @@ $(function () {
 
                 },
 
-// JQuery's awesome submit handler.         
+// JQuery's awesome submit handler.
             submitHandler: function (form) {
-                
+
                 // Create variables from the form
                 var name = $('input#name').val();
                 var email = $('input#email').val();

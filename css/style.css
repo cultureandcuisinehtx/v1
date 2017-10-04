@@ -14,7 +14,7 @@
     7. Fifth section (Portfolio)
     8. Sixth section (Contact)
     9. Responsive
-    
+
 */
 
 @import "https://fonts.googleapis.com/css?family=Playfair+Display|Raleway:300,400,500,600|Source+Sans+Pro:200,300";
@@ -1265,7 +1265,7 @@ i {
 
 .map-events-container-body {
     width: 100%;
-    font-size: 1.50em;
+    font-size: 1.35em;
 }
 
 .map-events-container-body li {
@@ -1279,4 +1279,3 @@ i {
 .map-container .map-selected {
     color: #ea1d63;
 }
-
