@@ -160,7 +160,7 @@ $(function () {
     // To change date, simply edit: var endDate = "Dec 30, 2015 20:39:00";
 
     $(function countdown() {
-        var endDate = "October 17, 2017 19:00:00";
+        var endDate = "November 5, 2017 12:00:00";
         $('.countdown').countdown({
             date: endDate,
             render: function (data) {
